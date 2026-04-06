@@ -1,0 +1,208 @@
+:root {
+    --primary: #0f62fe;
+    --dark: #0b1c2d;
+    --light: #f5f7fb;
+    --text: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    color: var(--text);
+    background: white;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.navbar nav a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    color: var(--primary);
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+background: linear-gradient(120deg, #1a1a1a, #0b0b0b);
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    color: white;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+        letter-spacing: -0.5px;
+
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: white;
+    color: var(--primary);
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* SECTIONS */
+.section {
+    padding: 5rem 3rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.section.light {
+    background: var(--light);
+}
+
+.about-text {
+    margin-bottom: 1rem;
+}
+
+/* SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.skill-card {
+    background: white;
+    padding: 1.2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* PROJECTS */
+.project {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    align-items: center;
+}
+
+.project.reverse {
+    flex-direction: row-reverse;
+}
+
+.project img {
+    width: 45%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.project-info h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.project-info ul {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+/* CONTACT */
+.contact-grid a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    font-size: 1.05rem;
+}
+
+.contact-grid i {
+    font-size: 1.4rem;
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--dark);
+    color: white;
+}
+/* ===== DARK MODE ===== */
+body.dark {
+    --primary: #4da3ff;
+    --dark: #020b13;
+    --light: #0b1c2d;
+    --text: #e6e6e6;
+
+    background: var(--dark);
+    color: var(--text);
+}
+
+body.dark .navbar,
+body.dark .skill-card,
+body.dark .contact-grid a {
+    background: #0f253a;
+    color: var(--text);
+}
+
+body.dark footer {
+    background: black;
+}
+
+/* Toggle button */
+.theme-toggle {
+    margin-left: 1.5rem;
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+/* ===== CIRCUIT BACKGROUND ===== */
+#circuit-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.15;
+}
+body.dark #circuit-bg {
+    opacity: 0.25;
+}

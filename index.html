@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Manish Dahal | Electronics Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<canvas id="circuit-bg"></canvas>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Manish Dahal</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <button id="themeToggle" class="theme-toggle">🌙</button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Aspiring Electrical Engineer</h1>
+            <p>
+                Building real-world electronics by combining hardware, software,
+                and curiosity.
+            </p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p class="about-text">
+            I am an aspiring electrical engineer and electronics enthusiast.
+            Since I got into 12th grade, I’ve been learning and building hands-on
+            electronics projects, exploring how hardware and software come together
+            to make something useful.
+        </p>
+        <p class="about-text">
+            I’ve worked on personal projects ranging from simple Arduino systems
+            to more advanced microcontrollers with sensors, motors, and power circuits.
+            Each project has taught me something new about real-world engineering.
+        </p>
+
+        <div class="education">
+            <h3>Background</h3>
+            <ul>
+                <li><strong>High School Student</strong> — 2022–2026</li>
+                <li>Science Stream (Physics, Chemistry, Mathematics, Computer Science, English, Nepali)</li>
+                <li>Aspiring Electrical Engineer & Electronics Hobbyist</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section light">
+        <h2>Skills & Expertise</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">Basic Electronics & Soldering</div>
+            <div class="skill-card">Arduino & ESP32 Programming</div>
+            <div class="skill-card">Circuit Simulation & PCB Design</div>
+            <div class="skill-card">IoT & Wireless Communication</div>
+            <div class="skill-card">Real-Time Operating Systems (RTOS)</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <img src="images/rc-car-1.jpg" alt="RC Car Arduino">
+            <div class="project-info">
+                <h3>RC Car (Arduino)</h3>
+                <p>
+                    A remote-controlled car built with Arduino, operated via an IR remote.
+                    It uses a differential drive system with two rear DC motors.
+                </p>
+                <ul>
+                    <li>Arduino-based control</li>
+                    <li>IR Remote operation</li>
+                    <li>Separate power for motors & controller</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project reverse">
+            <img src="images/diy-cooler.jpg" alt="DIY Air Cooler">
+            <div class="project-info">
+                <h3>DIY Air Cooler</h3>
+                <p>
+                    A homemade air cooler built using stacked tin cubical boxes.
+                    A 12V motor and fan pull air through water-soaked grass for cooling.
+                </p>
+                <ul>
+                    <li>12V fan motor + 5V water pump</li>
+                    <li>Buck converter for voltage regulation</li>
+                    <li>Single battery power system</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="images/rc-car-advanced.jpg" alt="ESP32 RC Car">
+            <div class="project-info">
+                <h3>Smart RC Car (ESP32)</h3>
+                <p>
+                    An upgraded RC car using ESP32 with WiFi and Bluetooth control.
+                    Includes autonomous obstacle detection using ultrasonic sensors.
+                </p>
+                <ul>
+                    <li>ESP32 with WiFi & Bluetooth</li>
+                    <li>Ultrasonic sensor + servo scanning</li>
+                    <li>Automatic self-driving mode</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section light">
+        <h2>Contact</h2>
+
+        <div class="contact-grid">
+    <a href="mailto:manishdahal9864@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+    </a>
+
+    <a href="https://github.com/MilonClasher" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+    </a>
+
+    <a href="https://www.linkedin.com/in/manish-dahal-b65955202/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>LinkedIn</span>
+    </a>
+
+    <a href="https://www.youtube.com/@dahalelectronics007" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+        <span>YouTube</span>
+    </a>
+
+    <a href="https://instagram.com/mvideos98" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+        <span>Instagram</span>
+    </a>
+</div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Manish Dahal — Built with curiosity & electronics ⚡</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
