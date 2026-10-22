@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Not Found | Manish Dahal</title>
+    <meta name="description" content="This page does not exist. Go back to the home page of Manish Dahal.">
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#0f62fe">
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <script>
+        (function () {
+            var theme = "light";
+            try {
+                theme = localStorage.getItem("theme") ||
+                    (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            } catch (e) {}
+            document.documentElement.setAttribute("data-theme", theme);
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="/" aria-label="Manish Dahal, go to home page">Manish Dahal</a>
+        <div class="nav-actions">
+            <button id="themeToggle" class="icon-btn" type="button" aria-label="Switch to dark theme">🌙</button>
+        </div>
+    </header>
+
+    <main class="error-page">
+        <div>
+            <div class="error-code" aria-hidden="true">404</div>
+            <h1>Page not found</h1>
+            <p>The link is wrong, or the page moved. Go to the home page to find what you need.</p>
+            <a class="btn btn-solid" href="/">Go to Home Page</a>
+        </div>
+    </main>
+
+    <script src="/script.js" defer></script>
+</body>
+</html>
