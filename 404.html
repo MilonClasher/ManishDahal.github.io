@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Not Found | Manish Dahal</title>
+    <meta name="description" content="This page does not exist. Go back to the home page of Manish Dahal.">
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#eee3c9">
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <script>
+        (function () {
+            var theme = "light";
+            try {
+                theme = localStorage.getItem("theme") ||
+                    (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            } catch (e) {}
+            document.documentElement.setAttribute("data-theme", theme);
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Libre+Caslon+Text:wght@400;700&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="/" aria-label="Manish Dahal, go to home page"><span class="logo-mark" aria-hidden="true">MD</span><span class="logo-name">Manish Dahal</span></a>
+        <div class="nav-actions">
+            <button id="themeToggle" class="icon-btn" type="button" aria-label="Switch to dark theme">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="moon" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/><g class="sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="error-page">
+        <div class="error-inner">
+            <div class="error-code" aria-hidden="true">404</div>
+            <h1>Page not found</h1>
+            <p>The link is wrong, or the page moved. Go to the home page to find what you need.</p>
+            <a class="btn btn-solid" href="/">Go to home page</a>
+        </div>
+    </main>
+
+    <script src="/script.js" defer></script>
+</body>
+</html>
